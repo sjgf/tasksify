@@ -1,0 +1,15 @@
+// Button
+.button {
+    background: $accent-color;
+    border: none;
+    color: $primary-color-text;
+    font-weight: 500;
+    padding: $s-size;
+}
+
+.button--link {
+    background: none;
+    border: none;
+    color: $accent-color;
+    padding: 0;
+}

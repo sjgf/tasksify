@@ -1,0 +1,45 @@
+{
+  "name": "tasksify",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Samuel Gonzalez",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sjgf/tasksify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sjgf/tasksify/issues"
+  },
+  "homepage": "https://github.com/sjgf/tasksify#readme",
+  "scripts": {
+    "build-dev": "webpack --config webpack.dev.config.js",
+    "build-prod": "webpack --config webpack.prod.config.js",
+    "dev-server": "webpack-dev-server --config webpack.dev.config.js",
+    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "validator": "^8.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^0.28.4",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
